@@ -1,0 +1,17 @@
+<{% extends 'base.html' %} {% block content%} <form class="form-prediction" method=post enctype="multipart/form-data"
+    action='/predict'>
+
+    <h1 class="h3 mb-3 font-weight-normal">Upload Image</h1>
+    <input type="file" id="image" name='image' class="form-control" required autofocus>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Predict</button>
+    <br>
+    <!-- {% if prediction %}
+    <h3 class="h3 mb-3 font-weight-normal"> Prediction: {{prediction}} </h3>
+    {% endif %}
+    {% if img_data %}
+    <img class="mb-4" src="{{img_data}}" alt="" width=250, height='250'>
+    {% endif%} -->
+
+    </form>
+    {% endblock content%}
